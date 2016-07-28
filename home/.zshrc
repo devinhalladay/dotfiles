@@ -52,7 +52,7 @@ PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_c
 #
 #==============================
 
-plugins=(zshmarks alias-tips)
+plugins=(zshmarks)
 
 # User configuration
 
@@ -63,3 +63,7 @@ eval "$(rbenv init -)"
 
 source $HOME/.aliases
 source $ZSH/oh-my-zsh.sh
+
+PATH="/Users/Devin/.themekit:$PATH"
+
+fpath=(/usr/local/share/zsh-completions $fpath)

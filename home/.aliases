@@ -1,7 +1,3 @@
-
-# Update dotfiles
-alias updot="git --git-dir=$HOME/.dotfiles/.git pull --recurse-submodules && ~/.dotfiles/make.sh"
-
 # Make editing config files easier/less meta
 alias zshrc="atom $HOME/.zshrc"
 alias ae='atom $HOME/.aliases'
