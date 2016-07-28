@@ -1,0 +1,43 @@
+@import "ui-variables";
+
+.overlay {
+    color: @text-color;
+    background-color: rgba(34, 34, 34, .9);
+    padding: @component-padding;
+    border-radius: 0 0 6px 6px;
+
+    .editor.mini {
+        height: 44px;
+        max-height: 44px;
+        line-height: 44px;
+        padding: 0 13px;
+        border-radius: 4px;
+    }
+
+    .select-list ol.list-group, &.select-list ol.list-group {
+        background: @foreground;
+        border-radius: 4px;
+
+        li {
+            -webkit-transition: background 200ms linear, color 200ms linear;
+            padding: @component-padding;
+
+            &.two-lines {
+                padding: @component-padding/2 @component-padding;
+            }
+
+            .status.icon {
+                float: right;
+                margin-left: @component-icon-padding;
+
+                &:before {
+                    margin-right: 0;
+                }
+            }
+
+            &.selected {
+                color: #fff;
+            }
+        }
+    }
+}

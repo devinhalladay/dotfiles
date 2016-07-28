@@ -1,0 +1,46 @@
+@import "ui-mixins";
+@import "ui-variables";
+@import "buttons";
+
+.tool-panel {
+    .text(normal);
+    position: relative;
+}
+
+.focusable-panel, .focusable-panel:focus{
+    background: transparent!important;
+    box-shadow: none!important;
+}
+
+.inset-panel {
+    position: relative;
+}
+
+.panel-heading {
+    .text(normal);
+
+    .btn {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        @bg: lighten(@button-background-color, 10%);
+        @hover: lighten(@button-background-color-hover, 10%);
+        @selected: lighten(@button-background-color-selected, 10%);
+        @text: lighten(@text-color, 10%);
+        .btn-background(@bg, @hover, @selected, @text);
+    }
+}
+
+// footer color
+.tool-panel.panel-bottom{
+    box-shadow: none;
+    border: none;
+    color: #555;
+}
+.pull-right a{
+    color: #555;
+}
+
+.panel-bottom.find-and-replace{
+    border-bottom: 1px solid #333;
+}

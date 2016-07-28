@@ -1,0 +1,45 @@
+
+# Update dotfiles
+alias updot="git --git-dir=$HOME/.dotfiles/.git pull --recurse-submodules && ~/.dotfiles/make.sh"
+
+# Make editing config files easier/less meta
+alias zshrc="atom $HOME/.zshrc"
+alias ae='atom $HOME/.aliases'
+alias sshconf='atom $HOME/Dropbox/.ssh-config'
+alias reload="source $HOME/.zshrc"
+
+# `bundle exec` can be a bit long.
+alias be="bundle exec"
+
+# Easily jump to the root of a git repo
+alias groot='cd "$(git rev-parse --show-toplevel)"'
+
+# Start screensaver
+alias ss='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
+
+# Edit in Atom
+alias a='atom'
+
+# Gem install
+alias sgi='sudo gem install --no-ri --no-rdoc'
+
+# Convenience alias for Python's Simple HTTP server
+alias serve='python -m SimpleHTTPServer 8000'
+
+# Git aliases
+alias gcm='git commit -m'
+alias gps='git push'
+alias gpl='git pull'
+alias grb='git fetch origin && git rebase origin/master'
+
+# File aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Make zshmarks more like bashmarks
+alias g="jump"
+alias s="bookmark"
+alias d="deletemark"
+alias p="showmarks"
+alias l="showmarks"

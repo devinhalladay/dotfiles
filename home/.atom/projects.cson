@@ -1,0 +1,18 @@
+dotfiles:
+  title: "Dotfiles"
+  paths: [
+    "/Users/Devin"
+    "/Users/Devin/.config"
+    "/Users/Devin/.dotfiles"
+    "/Users/Devin/.gem"
+    "/Users/Devin/.git"
+    "/Users/Devin/.local"
+    "/Users/Devin/.oh-my-zsh"
+    "/Users/Devin/.rbenv"
+    "/Users/Devin/.ssh"
+  ]
+"devinhalladay.com":
+  title: "devinhalladay.com"
+  paths: [
+    "/Users/Devin/sites/devinhalladay.com"
+  ]

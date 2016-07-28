@@ -1,0 +1,17 @@
+@import "ui-variables";
+@import "ui-mixins";
+@import "octicon-mixins";
+
+.dropdown-menu {
+    background-color: #4a4e52;
+    padding: 0;
+
+    > li > a {
+        .text(normal);
+    }
+
+    > li > a:hover {
+        .text(highlight);
+        background-color: @background-color-highlight;
+    }
+}
