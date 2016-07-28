@@ -1,0 +1,3 @@
+[submodule "home/.oh-my-zsh/custom/plugins/zshmarks"]
+    path = home/.oh-my-zsh/custom/plugins/zshmarks
+    url = https://github.com/jocelynmallon/zshmarks.git
